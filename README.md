@@ -1,40 +1,37 @@
-# Conversor de IP
+# Conversor de IP Simples
 
-Uma aplicação web moderna e intuitiva para converter endereços IP entre diferentes formatos numéricos.
+Uma aplicação web simples e intuitiva para converter endereços IP entre diferentes formatos numéricos.
 
-## 🌟 Funcionalidades
+## 🌟 O que a ferramenta faz?
 
-- **Conversão Múltipla**: Converte endereços IP para:
+- **Conversão múltipla**: Converte endereços IP para:
   - Decimal (32-bit)
   - Hexadecimal
   - Binário (com separação por octetos)
   - Octal
-- **Interface Intuitiva**: Design moderno e responsivo
-- **Validação em Tempo Real**: Verifica a validade do IP inserido
-- **Botões de Exemplo**: IPs pré-definidos para teste rápido
-- **Funcionalidade de Cópia**: Copie qualquer resultado com um clique
-- **Responsivo**: Funciona perfeitamente em desktop e mobile
+- **Interface intuitiva**: Design simples
+- **Validação em tempo real**: Verifica a validade do IP inserido
+- **Botões de exemplo**: IPs pré-definidos para teste rápido
+- **Funcionalidade de cópia**: Copie qualquer resultado com um clique
+- **Responsivo**: Funciona e em desktop e mobile
 
-## 🚀 Como Usar
+## 🚀 Como usar
 
 1. **Inserir IP**: Digite um endereço IP válido no campo de entrada (ex: 192.168.1.1)
-2. **Converter**: Clique no botão "Converter" ou pressione Enter
-3. **Visualizar Resultados**: Veja as conversões em todos os formatos
-4. **Copiar Valores**: Use os botões "Copiar" para copiar qualquer resultado
-5. **Testar Exemplos**: Use os botões de exemplo para testar rapidamente
+2. **Converter**: Clique no botão "Converter" ou pressione enter
+3. **Visualizar Resultados**: Veja as conversões
+4. **Copiar valores**: Use os botões "Copiar" para copiar qualquer resultado
+5. **Testar exemplos**: Use os botões de exemplo para testar 
 
 ## 🛠️ Tecnologias Utilizadas
 
 ### Backend
-- **Flask**: Framework web Python
-- **Python 3.11**: Linguagem de programação
+- **Flask**: Framework Python, leve e perfeito para construir a API REST de conversão.
+- **Python 3.11**: A linguagem tranquila pra fazer a mágica dos cálculos.
 - **ipaddress**: Biblioteca para validação de IPs
 
 ### Frontend
-- **HTML5**: Estrutura da página
-- **CSS3**: Estilização moderna com gradientes e animações
-- **JavaScript**: Interatividade e comunicação com API
-- **Design Responsivo**: Compatível com todos os dispositivos
+- **HTML e CSS:** Design com gradientes e animações suaves para uma boa experiência
 
 ## 📁 Estrutura do Projeto
 
@@ -64,7 +61,7 @@ ip-converter/
 - Python 3.11+
 - pip (gerenciador de pacotes Python)
 
-### Passos para Instalação
+### Passos para instalação
 
 1. **Clone ou baixe o projeto**
    ```bash
@@ -73,8 +70,6 @@ ip-converter/
 
 2. **Ative o ambiente virtual**
    ```bash
-   source venv/bin/activate  # Linux/Mac
-   # ou
    venv\Scripts\activate     # Windows
    ```
 
@@ -135,8 +130,8 @@ Valida se um endereço IP é válido.
 
 ## 🎨 Características do Design
 
-- **Gradientes Modernos**: Interface com cores vibrantes
-- **Animações Suaves**: Transições e efeitos hover
+- **Gradientes**: Interface com cores vibrantes
+- **Animações**: Transições e efeitos hover
 - **Cards Responsivos**: Layout em grid adaptável
 - **Feedback Visual**: Indicações claras de sucesso/erro
 - **Tipografia Legível**: Fontes otimizadas para leitura
@@ -151,20 +146,7 @@ Valida se um endereço IP é válido.
 | 127.0.0.1 | 2130706433 | 0x7f000001 | 01111111.00000000.00000000.00000001 | 177.0.0.1 |
 | 10.0.0.1 | 167772161 | 0x0a000001 | 00001010.00000000.00000000.00000001 | 12.0.0.1 |
 
-## 🔒 Validação de IP
 
-A aplicação valida automaticamente:
-- Formato correto (xxx.xxx.xxx.xxx)
-- Cada octeto entre 0-255
-- Caracteres válidos (apenas números e pontos)
-
-## 📱 Compatibilidade
-
-- ✅ Chrome 80+
-- ✅ Firefox 75+
-- ✅ Safari 13+
-- ✅ Edge 80+
-- ✅ Dispositivos móveis (iOS/Android)
 
 ## 🤝 Contribuição
 
@@ -176,9 +158,9 @@ Este projeto foi criado como uma ferramenta educacional e prática. Sinta-se à 
 
 ## 📄 Licença
 
-Este projeto é de código aberto e está disponível sob a licença MIT.
+Este projeto é de código aberto e está disponível
 
 ---
 
-**Desenvolvido com ❤️ usando Flask e tecnologias web modernas**
+**Desenvolvido usando Flask e tecnologias web simples**
 
