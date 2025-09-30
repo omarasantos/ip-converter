@@ -9,19 +9,19 @@ Uma aplicação web simples e intuitiva para converter endereços IP entre difer
   - Hexadecimal
   - Binário (com separação por octetos)
   - Octal
-- **Interface Intuitiva**: Design moderno e responsivo
-- **Validação em Tempo Real**: Verifica a validade do IP inserido
-- **Botões de Exemplo**: IPs pré-definidos para teste rápido
-- **Funcionalidade de Cópia**: Copie qualquer resultado com um clique
-- **Responsivo**: Funciona perfeitamente em desktop e mobile
+- **Interface intuitiva**: Design simples
+- **Validação em tempo real**: Verifica a validade do IP inserido
+- **Botões de exemplo**: IPs pré-definidos para teste rápido
+- **Funcionalidade de cópia**: Copie qualquer resultado com um clique
+- **Responsivo**: Funciona e em desktop e mobile
 
 ## 🚀 Como usar
 
 1. **Inserir IP**: Digite um endereço IP válido no campo de entrada (ex: 192.168.1.1)
 2. **Converter**: Clique no botão "Converter" ou pressione enter
 3. **Visualizar Resultados**: Veja as conversões
-4. **Copiar Valores**: Use os botões "Copiar" para copiar qualquer resultado
-5. **Testar Exemplos**: Use os botões de exemplo para testar 
+4. **Copiar valores**: Use os botões "Copiar" para copiar qualquer resultado
+5. **Testar exemplos**: Use os botões de exemplo para testar 
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -32,7 +32,6 @@ Uma aplicação web simples e intuitiva para converter endereços IP entre difer
 
 ### Frontend
 - **HTML e CSS:** Design com gradientes e animações suaves para uma boa experiência
-- **Design Responsivo**: Compatível com todos os dispositivos
 
 ## 📁 Estrutura do Projeto
 
@@ -62,7 +61,7 @@ ip-converter/
 - Python 3.11+
 - pip (gerenciador de pacotes Python)
 
-### Passos para Instalação
+### Passos para instalação
 
 1. **Clone ou baixe o projeto**
    ```bash
