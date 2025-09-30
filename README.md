@@ -1,0 +1,184 @@
+# Conversor de IP
+
+Uma aplicação web moderna e intuitiva para converter endereços IP entre diferentes formatos numéricos.
+
+## 🌟 Funcionalidades
+
+- **Conversão Múltipla**: Converte endereços IP para:
+  - Decimal (32-bit)
+  - Hexadecimal
+  - Binário (com separação por octetos)
+  - Octal
+- **Interface Intuitiva**: Design moderno e responsivo
+- **Validação em Tempo Real**: Verifica a validade do IP inserido
+- **Botões de Exemplo**: IPs pré-definidos para teste rápido
+- **Funcionalidade de Cópia**: Copie qualquer resultado com um clique
+- **Responsivo**: Funciona perfeitamente em desktop e mobile
+
+## 🚀 Como Usar
+
+1. **Inserir IP**: Digite um endereço IP válido no campo de entrada (ex: 192.168.1.1)
+2. **Converter**: Clique no botão "Converter" ou pressione Enter
+3. **Visualizar Resultados**: Veja as conversões em todos os formatos
+4. **Copiar Valores**: Use os botões "Copiar" para copiar qualquer resultado
+5. **Testar Exemplos**: Use os botões de exemplo para testar rapidamente
+
+## 🛠️ Tecnologias Utilizadas
+
+### Backend
+- **Flask**: Framework web Python
+- **Python 3.11**: Linguagem de programação
+- **ipaddress**: Biblioteca para validação de IPs
+
+### Frontend
+- **HTML5**: Estrutura da página
+- **CSS3**: Estilização moderna com gradientes e animações
+- **JavaScript**: Interatividade e comunicação com API
+- **Design Responsivo**: Compatível com todos os dispositivos
+
+## 📁 Estrutura do Projeto
+
+```
+ip-converter/
+├── src/
+│   ├── main.py                 # Arquivo principal do Flask
+│   ├── routes/
+│   │   ├── ip_converter.py     # Rotas da API de conversão
+│   │   └── user.py            # Rotas de usuário (template)
+│   ├── models/
+│   │   └── user.py            # Modelos do banco (template)
+│   ├── static/
+│   │   ├── index.html         # Interface principal
+│   │   ├── style.css          # Estilos CSS
+│   │   └── script.js          # Lógica JavaScript
+│   └── database/
+│       └── app.db             # Banco SQLite
+├── venv/                      # Ambiente virtual Python
+├── requirements.txt           # Dependências Python
+└── README.md                  # Esta documentação
+```
+
+## 🔧 Instalação e Execução
+
+### Pré-requisitos
+- Python 3.11+
+- pip (gerenciador de pacotes Python)
+
+### Passos para Instalação
+
+1. **Clone ou baixe o projeto**
+   ```bash
+   cd ip-converter
+   ```
+
+2. **Ative o ambiente virtual**
+   ```bash
+   source venv/bin/activate  # Linux/Mac
+   # ou
+   venv\Scripts\activate     # Windows
+   ```
+
+3. **Instale as dependências**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Execute a aplicação**
+   ```bash
+   python src/main.py
+   ```
+
+5. **Acesse no navegador**
+   ```
+   http://localhost:5000
+   ```
+
+## 🌐 API Endpoints
+
+### POST /api/convert
+Converte um endereço IP para diferentes formatos.
+
+**Request Body:**
+```json
+{
+  "ip": "192.168.1.1"
+}
+```
+
+**Response:**
+```json
+{
+  "original": "192.168.1.1",
+  "decimal": 3232235777,
+  "hexadecimal": "0xc0a80101",
+  "binary": "11000000.10101000.00000001.00000001",
+  "octal": "300.250.1.1"
+}
+```
+
+### POST /api/validate
+Valida se um endereço IP é válido.
+
+**Request Body:**
+```json
+{
+  "ip": "192.168.1.1"
+}
+```
+
+**Response:**
+```json
+{
+  "valid": true
+}
+```
+
+## 🎨 Características do Design
+
+- **Gradientes Modernos**: Interface com cores vibrantes
+- **Animações Suaves**: Transições e efeitos hover
+- **Cards Responsivos**: Layout em grid adaptável
+- **Feedback Visual**: Indicações claras de sucesso/erro
+- **Tipografia Legível**: Fontes otimizadas para leitura
+- **Ícones Intuitivos**: Emojis para identificação rápida
+
+## 🧮 Exemplos de Conversão
+
+| IP Original | Decimal | Hexadecimal | Binário | Octal |
+|-------------|---------|-------------|---------|-------|
+| 192.168.1.1 | 3232235777 | 0xc0a80101 | 11000000.10101000.00000001.00000001 | 300.250.1.1 |
+| 8.8.8.8 | 134744072 | 0x08080808 | 00001000.00001000.00001000.00001000 | 10.10.10.10 |
+| 127.0.0.1 | 2130706433 | 0x7f000001 | 01111111.00000000.00000000.00000001 | 177.0.0.1 |
+| 10.0.0.1 | 167772161 | 0x0a000001 | 00001010.00000000.00000000.00000001 | 12.0.0.1 |
+
+## 🔒 Validação de IP
+
+A aplicação valida automaticamente:
+- Formato correto (xxx.xxx.xxx.xxx)
+- Cada octeto entre 0-255
+- Caracteres válidos (apenas números e pontos)
+
+## 📱 Compatibilidade
+
+- ✅ Chrome 80+
+- ✅ Firefox 75+
+- ✅ Safari 13+
+- ✅ Edge 80+
+- ✅ Dispositivos móveis (iOS/Android)
+
+## 🤝 Contribuição
+
+Este projeto foi criado como uma ferramenta educacional e prática. Sinta-se à vontade para:
+- Reportar bugs
+- Sugerir melhorias
+- Adicionar novas funcionalidades
+- Melhorar a documentação
+
+## 📄 Licença
+
+Este projeto é de código aberto e está disponível sob a licença MIT.
+
+---
+
+**Desenvolvido com ❤️ usando Flask e tecnologias web modernas**
+

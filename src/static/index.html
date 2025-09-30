@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de IP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌐 Conversor de IP</h1>
+            <p>Converta endereços IP para diferentes formatos</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="ip-input">Endereço IP:</label>
+                    <input 
+                        type="text" 
+                        id="ip-input" 
+                        placeholder="Ex: 192.168.1.1"
+                        maxlength="15"
+                    >
+                    <button id="convert-btn">Converter</button>
+                </div>
+                <div id="validation-message" class="validation-message"></div>
+            </div>
+
+            <div id="results-section" class="results-section hidden">
+                <h2>Resultados da Conversão</h2>
+                
+                <div class="result-grid">
+                    <div class="result-card">
+                        <h3>🔢 Decimal</h3>
+                        <div class="result-value" id="decimal-result">-</div>
+                        <button class="copy-btn" data-target="decimal-result">Copiar</button>
+                    </div>
+
+                    <div class="result-card">
+                        <h3>🔠 Hexadecimal</h3>
+                        <div class="result-value" id="hex-result">-</div>
+                        <button class="copy-btn" data-target="hex-result">Copiar</button>
+                    </div>
+
+                    <div class="result-card">
+                        <h3>💾 Binário</h3>
+                        <div class="result-value" id="binary-result">-</div>
+                        <button class="copy-btn" data-target="binary-result">Copiar</button>
+                    </div>
+
+                    <div class="result-card">
+                        <h3>🔢 Octal</h3>
+                        <div class="result-value" id="octal-result">-</div>
+                        <button class="copy-btn" data-target="octal-result">Copiar</button>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>ℹ️ Informações Adicionais</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>IP Original:</strong>
+                            <span id="original-ip">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Convertendo...</p>
+            </div>
+
+            <div id="error-message" class="error-message hidden"></div>
+        </main>
+
+        <footer>
+            <div class="examples">
+                <h3>Exemplos de IPs válidos:</h3>
+                <div class="example-ips">
+                    <button class="example-btn" data-ip="192.168.1.1">192.168.1.1</button>
+                    <button class="example-btn" data-ip="8.8.8.8">8.8.8.8</button>
+                    <button class="example-btn" data-ip="127.0.0.1">127.0.0.1</button>
+                    <button class="example-btn" data-ip="10.0.0.1">10.0.0.1</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
