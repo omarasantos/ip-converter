@@ -4,7 +4,7 @@ Uma aplicação web simples e intuitiva para converter endereços IP entre difer
 
 ## 🌟 O que a ferramenta faz?
 
-- **Conversão Múltipla**: Converte endereços IP para:
+- **Conversão múltipla**: Converte endereços IP para:
   - Decimal (32-bit)
   - Hexadecimal
   - Binário (com separação por octetos)
