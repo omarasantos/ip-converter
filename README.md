@@ -1,4 +1,4 @@
-# Conversor de IP Simples
+# Conversor de IP simples
 
 Uma aplicação web simples e intuitiva para converter endereços IP entre diferentes formatos numéricos.
 
@@ -33,7 +33,7 @@ Uma aplicação web simples e intuitiva para converter endereços IP entre difer
 ### Frontend
 - **HTML e CSS:** Design com gradientes e animações suaves para uma boa experiência
 
-## 📁 Estrutura do Projeto
+## 📁 Estrutura do projeto
 
 ```
 ip-converter/
@@ -55,7 +55,7 @@ ip-converter/
 └── README.md                  # Esta documentação
 ```
 
-## 🔧 Instalação e Execução
+## 🔧 Instalação e execução
 
 ### Pré-requisitos
 - Python 3.11+
@@ -128,16 +128,15 @@ Valida se um endereço IP é válido.
 }
 ```
 
-## 🎨 Características do Design
+## 🎨 Características do design
 
 - **Gradientes**: Interface com cores vibrantes
 - **Animações**: Transições e efeitos hover
 - **Cards Responsivos**: Layout em grid adaptável
 - **Feedback Visual**: Indicações claras de sucesso/erro
 - **Tipografia Legível**: Fontes otimizadas para leitura
-- **Ícones Intuitivos**: Emojis para identificação rápida
 
-## 🧮 Exemplos de Conversão
+## 🧮 Exemplos de conversão
 
 | IP Original | Decimal | Hexadecimal | Binário | Octal |
 |-------------|---------|-------------|---------|-------|
